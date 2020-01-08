@@ -20,10 +20,10 @@
 
     <div id="timer">
       <!--<div id="days"></div>-->
-      <div id="Ngày"></div>
-      <div id="Giờ"></div>
-      <div id="Phút"></div>
-      <div id="Giây"></div>
+      <div id="days"></div>	      
+      <div id="hours"></div>	    
+      <div id="minutes"></div>
+      <div id="seconds"></div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -58,10 +58,10 @@
             seconds = "0" + seconds;
           }
 
-          $("#days").html(days + "<span>Days</span>");
-          $("#hours").html(hours + "<span>Hours</span>");
-          $("#minutes").html(minutes + "<span>Minutes</span>");
-          $("#seconds").html(seconds + "<span>Seconds</span>");
+          $("#days").html(days + "<span>Ngày</span>");
+          $("#hours").html(hours + "<span>Giờ</span>");
+          $("#minutes").html(minutes + "<span>Phút</span>");
+          $("#seconds").html(seconds + "<span>Giây</span>");
 
           timeout = setTimeout(makeTimer, 1000);
         }
